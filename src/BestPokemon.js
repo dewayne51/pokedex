@@ -2,7 +2,6 @@ import React from "react";
 
 const BestPokemon = (props) => {
     //const pokemon = "pikachu";
-   
   return (
     <div>
       <p>My favorite Pokemon is {props.pokemon}</p>

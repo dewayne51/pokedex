@@ -31,5 +31,4 @@ const [caught, setCaught] = useState([]);
     </div>
     );
   };
-
 export default CaughtPokemon;
