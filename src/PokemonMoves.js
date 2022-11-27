@@ -12,21 +12,22 @@ function PokemonMoves() {
         });
     }, []);
 
-
-  if (pokemonData) {
-    return (
-      <div>
-        <p>{pokemonData.name}'s moves:</p>
-        <ul>
-          {pokemonData.moves.map((move, index) => {
-            return <li key={index}>{move.move.name}</li>;
-          })}
-        </ul>
+return (
+      <div className="pokemon-data">
+        {pokemonData ? (
+          <div>
+            <p>{pokemonData.name}'s moves:</p>
+            <p>
+              {pokemonData.moves.map((move, index) => {
+                return <li key={index}>{move.move.name}</li>;
+              })}
+            </p>
+          </div>
+        ) : (
+          "null"
+        )}
       </div>
     );
-  } else {
-    return null;
   }
-}
 
 export default PokemonMoves;
