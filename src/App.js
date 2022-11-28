@@ -3,7 +3,8 @@ import "./App.css";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import PokemonMoves from "./PokemonMoves";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 function App (props)  {
 const userName="Dewayne";
@@ -17,7 +18,8 @@ const userName="Dewayne";
       </header>
      <BestPokemon abilities = {abilities} pokemon = {"hello Pickachu"}  />
      <CaughtPokemon date ={date} />
-     <PokemonMoves />
+     <PokemonMovesSelector />
+     <PokemonCity />
     </div>
   );
 }
