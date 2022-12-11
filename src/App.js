@@ -24,7 +24,7 @@ const userName="Dewayne";
        <Link to="src/CaughtPokemon.js">Caught Pokemon</Link>
      <PokemonMovesSelector />
      <PokemonCity />
-     <Routes> 
+     <Routes>
       <Route element={<BestPokemon abilities = {abilities} pokemon = {"hello Pickachu"}  />} path="src/BestPokemon.js" />
       <Route element={<CaughtPokemon date ={date} />} path="src/CaughtPokemon.js" />
       <Route path="/pokemon/:name" element={<PokemonInfo />} />
