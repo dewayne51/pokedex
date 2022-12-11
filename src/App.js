@@ -8,7 +8,7 @@ import PokemonCity from "./PokemonCity";
 import PokemonInfo from "./PokemonInfo";
 import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
 
-function App (props)  {
+function App ()  {
 const userName="Dewayne";
  const abilities = ["Anticipation","Adaptability","Run-Away"];
  let date= new Date().toLocaleDateString();
