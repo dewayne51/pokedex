@@ -6,14 +6,12 @@ import CaughtPokemon from "./CaughtPokemon";
 import PokemonMovesSelector from "./PokemonMovesSelector";
 import PokemonCity from "./PokemonCity";
 import PokemonInfo from "./PokemonInfo";
-import { BrowserRouter, Routes, Route, Link, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App ()  {
 const userName="Dewayne";
  const abilities = ["Anticipation","Adaptability","Run-Away"];
  let date= new Date().toLocaleDateString();
- let { name } = useParams();
- 
   return (
 
     <div className="App">
@@ -34,10 +32,5 @@ const userName="Dewayne";
       </BrowserRouter>
     </div>
   );
-
-  
 }
-
-
-
 export default App;
